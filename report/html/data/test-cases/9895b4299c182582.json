@@ -1,0 +1,132 @@
+{
+  "uid" : "9895b4299c182582",
+  "name" : "test_login2[args0]",
+  "fullName" : "scripts.test_login.TestLogin#test_login2",
+  "historyId" : "b070444a4fe3f8109987bda83efe4674",
+  "time" : {
+    "start" : 1576647496375,
+    "stop" : 1576647539690,
+    "duration" : 43315
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
+  "statusTrace" : "self = <test_login.TestLogin object at 0x00000000046B92E8>, args = {'password': '1996514lvp', 'toast': '成功', 'username': '17745164862'}\n\n    @allure.step(title=\"测试登录脚本\")\n    @pytest.mark.parametrize(\"args\", data_with_key(\"test_login2\"))\n    def test_login2(self, args):\n        username=args['username']\n        password=args['password']\n        toast=args['toast']\n        print(username,password,toast)\n        # 点击立即登录\n        allure.attach(\"点击立即登录\",\"立即登录按钮\")\n        self.login_page.click_now_login()\n        # 点击 密码登录\n        allure.attach(\"点击密码登录\", \"密码登录按钮\")\n        self.login_page.password_login()\n        # 5、输入手机号\n        allure.attach(\"输入手机号码\", username)\n        self.login_page.input_phone_number(username)\n        # 点击密码框\n        allure.attach(\"点击密码框\", \"点击密码框使其选中状态\")\n        self.login_page.click_password_text()\n        # 6、输入密码\n        allure.attach(\"输入密码\", password)\n        self.login_page.input_password(password)\n        # 7、点击登录\n        allure.attach(\"点击登录\", \"登录按钮\")\n        self.login_page.click_login()\n        # 断言登录是否成功\n        allure.attach('断言 \"判断对用提示\"是否存在',toast)\n>       dy=self.login_page.is_toast_exist(toast,True,\"login\")\n\nscripts\\test_login.py:93: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nbase\\base_action.py:41: in is_toast_exist\n    toa=self.find_toast(message, is_screenshot, screenshot_name, timeout, poll)\nbase\\base_action.py:33: in find_toast\n    element=self.find_elenent((By.XPATH,message),timeout,poll)\nbase\\base_action.py:26: in find_elenent\n    return WebDriverWait(self.driver,timeout,poll).until(lambda x:x.find_element(by,value))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"1e74f1f6-a08c-49f5-b28b-f00f860e0b25\")>, method = <function BaseAction.find_elenent.<locals>.<lambda> at 0x000000000471C158>, message = ''\n\n    def until(self, method, message=''):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value is not False.\"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.time() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, 'screen', None)\n                stacktrace = getattr(exc, 'stacktrace', None)\n            time.sleep(self._poll)\n            if time.time() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n..\\..\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\selenium\\webdriver\\support\\wait.py:80: TimeoutException",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
+    "statusTrace" : "self = <test_login.TestLogin object at 0x00000000046B92E8>, args = {'password': '1996514lvp', 'toast': '成功', 'username': '17745164862'}\n\n    @allure.step(title=\"测试登录脚本\")\n    @pytest.mark.parametrize(\"args\", data_with_key(\"test_login2\"))\n    def test_login2(self, args):\n        username=args['username']\n        password=args['password']\n        toast=args['toast']\n        print(username,password,toast)\n        # 点击立即登录\n        allure.attach(\"点击立即登录\",\"立即登录按钮\")\n        self.login_page.click_now_login()\n        # 点击 密码登录\n        allure.attach(\"点击密码登录\", \"密码登录按钮\")\n        self.login_page.password_login()\n        # 5、输入手机号\n        allure.attach(\"输入手机号码\", username)\n        self.login_page.input_phone_number(username)\n        # 点击密码框\n        allure.attach(\"点击密码框\", \"点击密码框使其选中状态\")\n        self.login_page.click_password_text()\n        # 6、输入密码\n        allure.attach(\"输入密码\", password)\n        self.login_page.input_password(password)\n        # 7、点击登录\n        allure.attach(\"点击登录\", \"登录按钮\")\n        self.login_page.click_login()\n        # 断言登录是否成功\n        allure.attach('断言 \"判断对用提示\"是否存在',toast)\n>       dy=self.login_page.is_toast_exist(toast,True,\"login\")\n\nscripts\\test_login.py:93: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nbase\\base_action.py:41: in is_toast_exist\n    toa=self.find_toast(message, is_screenshot, screenshot_name, timeout, poll)\nbase\\base_action.py:33: in find_toast\n    element=self.find_elenent((By.XPATH,message),timeout,poll)\nbase\\base_action.py:26: in find_elenent\n    return WebDriverWait(self.driver,timeout,poll).until(lambda x:x.find_element(by,value))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"1e74f1f6-a08c-49f5-b28b-f00f860e0b25\")>, method = <function BaseAction.find_elenent.<locals>.<lambda> at 0x000000000471C158>, message = ''\n\n    def until(self, method, message=''):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value is not False.\"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.time() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, 'screen', None)\n                stacktrace = getattr(exc, 'stacktrace', None)\n            time.sleep(self._poll)\n            if time.time() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n..\\..\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\selenium\\webdriver\\support\\wait.py:80: TimeoutException",
+    "steps" : [ {
+      "name" : "测试登录脚本",
+      "time" : {
+        "start" : 1576647496376,
+        "stop" : 1576647539689,
+        "duration" : 43313
+      },
+      "status" : "broken",
+      "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: \n\n",
+      "statusTrace" : "  File \"c:\\users\\administrator\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\allure_commons\\_allure.py\", line 157, in impl\n    return func(*a, **kw)\n  File \"C:\\Users\\Administrator\\PycharmProjects\\taobao\\scripts\\test_login.py\", line 93, in test_login2\n    dy=self.login_page.is_toast_exist(toast,True,\"login\")\n  File \"C:\\Users\\Administrator\\PycharmProjects\\taobao\\base\\base_action.py\", line 41, in is_toast_exist\n    toa=self.find_toast(message, is_screenshot, screenshot_name, timeout, poll)\n  File \"C:\\Users\\Administrator\\PycharmProjects\\taobao\\base\\base_action.py\", line 33, in find_toast\n    element=self.find_elenent((By.XPATH,message),timeout,poll)\n  File \"C:\\Users\\Administrator\\PycharmProjects\\taobao\\base\\base_action.py\", line 26, in find_elenent\n    return WebDriverWait(self.driver,timeout,poll).until(lambda x:x.find_element(by,value))\n  File \"c:\\users\\administrator\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\selenium\\webdriver\\support\\wait.py\", line 80, in until\n    raise TimeoutException(message, screen, stacktrace)\n",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a6f0e585bbef3c50",
+        "name" : "立即登录按钮",
+        "source" : "a6f0e585bbef3c50.attach",
+        "type" : "text/plain",
+        "size" : 18
+      }, {
+        "uid" : "5b6688282d5ce5ce",
+        "name" : "密码登录按钮",
+        "source" : "5b6688282d5ce5ce.attach",
+        "type" : "text/plain",
+        "size" : 18
+      }, {
+        "uid" : "7e40d43ee3dd0a82",
+        "name" : "17745164862",
+        "source" : "7e40d43ee3dd0a82.attach",
+        "type" : "text/plain",
+        "size" : 18
+      }, {
+        "uid" : "3864d8afa704e5c5",
+        "name" : "点击密码框使其选中状态",
+        "source" : "3864d8afa704e5c5.attach",
+        "type" : "text/plain",
+        "size" : 15
+      }, {
+        "uid" : "d5e6ee696129e92b",
+        "name" : "1996514lvp",
+        "source" : "d5e6ee696129e92b.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "fb6e5453068c3795",
+        "name" : "登录按钮",
+        "source" : "fb6e5453068c3795.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "c71a012c39ba7627",
+        "name" : "成功",
+        "source" : "c71a012c39ba7627.attach",
+        "type" : "text/plain",
+        "size" : 39
+      } ],
+      "parameters" : [ {
+        "name" : "args",
+        "value" : "{'username': '17745164862', 'password': '1996514lvp', 'toast': '成功'}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 7,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 7,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "scripts"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "USER-20171125WC"
+  }, {
+    "name" : "thread",
+    "value" : "9396-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "scripts.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "args",
+    "value" : "{'username': '17745164862', 'password': '1996514lvp', 'toast': '成功'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9895b4299c182582.json",
+  "parameterValues" : [ "{'username': '17745164862', 'password': '1996514lvp', 'toast': '成功'}" ]
+}

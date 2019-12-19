@@ -1,0 +1,33 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "scripts.test_login",
+    "children" : [ {
+      "name" : "test_login2[args1]",
+      "uid" : "207a676477a614",
+      "parentUid" : "6d38d5b6e2efe4acae4f0eaed7cfdf95",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576641322705,
+        "stop" : 1576641339561,
+        "duration" : 16856
+      },
+      "flaky" : false,
+      "parameters" : [ "{'username': '17745164862', 'password': '1996514555', 'toast': '错误'}" ]
+    }, {
+      "name" : "test_login2[args0]",
+      "uid" : "6ea85004212e67cc",
+      "parentUid" : "6d38d5b6e2efe4acae4f0eaed7cfdf95",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576654253689,
+        "stop" : 1576654285318,
+        "duration" : 31629
+      },
+      "flaky" : true,
+      "parameters" : [ "{'username': '17745164862', 'password': '1996514lvp', 'toast': '醉踏天下lwp', 'screen_name': 'test_login_001'}" ]
+    } ],
+    "uid" : "scripts.test_login"
+  } ]
+}

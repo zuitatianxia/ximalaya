@@ -1,0 +1,41 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "scripts",
+    "children" : [ {
+      "name" : "test_login",
+      "children" : [ {
+        "name" : "TestLogin",
+        "children" : [ {
+          "name" : "test_login2[args1]",
+          "uid" : "207a676477a614",
+          "parentUid" : "51cb19ae88f6b4d1ba88d873b7809ac5",
+          "status" : "passed",
+          "time" : {
+            "start" : 1576641322705,
+            "stop" : 1576641339561,
+            "duration" : 16856
+          },
+          "flaky" : false,
+          "parameters" : [ "{'username': '17745164862', 'password': '1996514555', 'toast': '错误'}" ]
+        }, {
+          "name" : "test_login2[args0]",
+          "uid" : "6ea85004212e67cc",
+          "parentUid" : "51cb19ae88f6b4d1ba88d873b7809ac5",
+          "status" : "passed",
+          "time" : {
+            "start" : 1576654253689,
+            "stop" : 1576654285318,
+            "duration" : 31629
+          },
+          "flaky" : true,
+          "parameters" : [ "{'username': '17745164862', 'password': '1996514lvp', 'toast': '醉踏天下lwp', 'screen_name': 'test_login_001'}" ]
+        } ],
+        "uid" : "51cb19ae88f6b4d1ba88d873b7809ac5"
+      } ],
+      "uid" : "5308816e98be8877fda327cc882cfe13"
+    } ],
+    "uid" : "af586ea5ffb1b57fad0f98a55a6d147c"
+  } ]
+}

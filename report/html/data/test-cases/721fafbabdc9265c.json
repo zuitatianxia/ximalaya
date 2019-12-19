@@ -1,0 +1,90 @@
+{
+  "uid" : "721fafbabdc9265c",
+  "name" : "test_login2[args0]",
+  "fullName" : "scripts.test_login.TestLogin#test_login2",
+  "historyId" : "b070444a4fe3f8109987bda83efe4674",
+  "time" : {
+    "start" : 1576652876601,
+    "stop" : 1576652876604,
+    "duration" : 3
+  },
+  "status" : "broken",
+  "statusMessage" : "FileNotFoundError: [Errno 2] No such file or directory: \"../screen/' + screen + '.png\"",
+  "statusTrace" : "self = <test_login.TestLogin object at 0x0000000003EBD470>, args = {'password': '1996514lvp', 'screen_name': 'test_login_001', 'toast': '醉踏天下lwp', 'username': '17745164862'}\n\n    @allure.step(title=\"测试登录脚本\")\n    @pytest.mark.parametrize(\"args\", data_with_key(\"test_login2\"))\n    def test_login2(self, args):\n        username=args['username']\n        password=args['password']\n        toast=args['toast']\n        screen=args['screen_name']\n        print(username,password,toast)\n>       context=self.readimage()\n\nscripts\\test_login.py:77: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <test_login.TestLogin object at 0x0000000003EBD470>\n\n    def readimage(self):\n>       with open(\"../screen/' + screen + '.png\", \"rb\") as f:\nE       FileNotFoundError: [Errno 2] No such file or directory: \"../screen/' + screen + '.png\"\n\nscripts\\test_login.py:19: FileNotFoundError",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "FileNotFoundError: [Errno 2] No such file or directory: \"../screen/' + screen + '.png\"",
+    "statusTrace" : "self = <test_login.TestLogin object at 0x0000000003EBD470>, args = {'password': '1996514lvp', 'screen_name': 'test_login_001', 'toast': '醉踏天下lwp', 'username': '17745164862'}\n\n    @allure.step(title=\"测试登录脚本\")\n    @pytest.mark.parametrize(\"args\", data_with_key(\"test_login2\"))\n    def test_login2(self, args):\n        username=args['username']\n        password=args['password']\n        toast=args['toast']\n        screen=args['screen_name']\n        print(username,password,toast)\n>       context=self.readimage()\n\nscripts\\test_login.py:77: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <test_login.TestLogin object at 0x0000000003EBD470>\n\n    def readimage(self):\n>       with open(\"../screen/' + screen + '.png\", \"rb\") as f:\nE       FileNotFoundError: [Errno 2] No such file or directory: \"../screen/' + screen + '.png\"\n\nscripts\\test_login.py:19: FileNotFoundError",
+    "steps" : [ {
+      "name" : "测试登录脚本",
+      "time" : {
+        "start" : 1576652876602,
+        "stop" : 1576652876603,
+        "duration" : 1
+      },
+      "status" : "broken",
+      "statusMessage" : "FileNotFoundError: [Errno 2] No such file or directory: \"../screen/' + screen + '.png\"\n",
+      "statusTrace" : "  File \"c:\\users\\administrator\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\allure_commons\\_allure.py\", line 157, in impl\n    return func(*a, **kw)\n  File \"C:\\Users\\Administrator\\PycharmProjects\\taobao\\scripts\\test_login.py\", line 77, in test_login2\n    context=self.readimage()\n  File \"C:\\Users\\Administrator\\PycharmProjects\\taobao\\scripts\\test_login.py\", line 19, in readimage\n    with open(\"../screen/' + screen + '.png\", \"rb\") as f:\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "args",
+        "value" : "{'username': '17745164862', 'password': '1996514lvp', 'toast': '醉踏天下lwp', 'screen_name': 'test_login_001'}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "scripts"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "USER-20171125WC"
+  }, {
+    "name" : "thread",
+    "value" : "8652-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "scripts.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "args",
+    "value" : "{'username': '17745164862', 'password': '1996514lvp', 'toast': '醉踏天下lwp', 'screen_name': 'test_login_001'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "721fafbabdc9265c.json",
+  "parameterValues" : [ "{'username': '17745164862', 'password': '1996514lvp', 'toast': '醉踏天下lwp', 'screen_name': 'test_login_001'}" ]
+}

@@ -1,0 +1,41 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "USER-20171125WC",
+    "children" : [ {
+      "name" : "9124-MainThread",
+      "children" : [ {
+        "name" : "test_login2[args0]",
+        "uid" : "6ea85004212e67cc",
+        "parentUid" : "f641c1f601892f9b7c450db9511620f3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1576654253689,
+          "stop" : 1576654285318,
+          "duration" : 31629
+        },
+        "flaky" : true,
+        "parameters" : [ "{'username': '17745164862', 'password': '1996514lvp', 'toast': '醉踏天下lwp', 'screen_name': 'test_login_001'}" ]
+      } ],
+      "uid" : "f641c1f601892f9b7c450db9511620f3"
+    }, {
+      "name" : "4532-MainThread",
+      "children" : [ {
+        "name" : "test_login2[args1]",
+        "uid" : "207a676477a614",
+        "parentUid" : "82390fe8e9f428c33a7c3c74bc19108c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1576641322705,
+          "stop" : 1576641339561,
+          "duration" : 16856
+        },
+        "flaky" : false,
+        "parameters" : [ "{'username': '17745164862', 'password': '1996514555', 'toast': '错误'}" ]
+      } ],
+      "uid" : "82390fe8e9f428c33a7c3c74bc19108c"
+    } ],
+    "uid" : "ea38d7e6d14fc129e8f4bbd6445e36d6"
+  } ]
+}

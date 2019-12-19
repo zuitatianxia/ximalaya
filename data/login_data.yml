@@ -1,0 +1,37 @@
+#test_login:
+#  -
+#    - "17745164862"
+#    - "1996514lvp"
+#    - "成功"
+#  -
+#    - "17745164861"
+#    - "1996514lvp"
+#    - "错误"
+#test_login1:
+#  -
+#    username: "17745164862"
+#    password: "1996514lvp"
+#    toast: "成功"
+#  -
+#    username: "1775164862"
+#    password: "1996514lvp"
+#    toast: "成功"
+#  -
+#    username: "17745164862"
+#    password: "1996514lvp"
+#    toast: "成功"
+test_login2:
+  test_login_001:
+    username: "17745164862"
+    password: "1996514lvp"
+    toast: "醉踏天下lwp"
+    screen_name: "test_login_001"
+#  test_login_003:
+#    username: "1775164862"
+#    password: "1996514lvp"
+#    toast: "成功"
+#  test_login_002:
+#    username: "17745164862"
+#    password: "1996514555"
+#    toast: "错误"
+#    screen_name: "test_login_002"

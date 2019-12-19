@@ -1,0 +1,393 @@
+{
+  "uid" : "6ea85004212e67cc",
+  "name" : "test_login2[args0]",
+  "fullName" : "scripts.test_login.TestLogin#test_login2",
+  "historyId" : "b070444a4fe3f8109987bda83efe4674",
+  "time" : {
+    "start" : 1576654253689,
+    "stop" : 1576654285318,
+    "duration" : 31629
+  },
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "测试登录脚本",
+      "time" : {
+        "start" : 1576654253690,
+        "stop" : 1576654285318,
+        "duration" : 31628
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "5582947433c3395b",
+        "name" : "立即登录按钮",
+        "source" : "5582947433c3395b.attach",
+        "type" : "text/plain",
+        "size" : 18
+      }, {
+        "uid" : "7a8233e2095dc728",
+        "name" : "密码登录按钮",
+        "source" : "7a8233e2095dc728.attach",
+        "type" : "text/plain",
+        "size" : 18
+      }, {
+        "uid" : "3f38e7a324451e04",
+        "name" : "17745164862",
+        "source" : "3f38e7a324451e04.attach",
+        "type" : "text/plain",
+        "size" : 18
+      }, {
+        "uid" : "dfeacf40bc38dd10",
+        "name" : "点击密码框使其选中状态",
+        "source" : "dfeacf40bc38dd10.attach",
+        "type" : "text/plain",
+        "size" : 15
+      }, {
+        "uid" : "275d816bf0696cc2",
+        "name" : "1996514lvp",
+        "source" : "275d816bf0696cc2.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "d1f53841df4adf30",
+        "name" : "登录按钮",
+        "source" : "d1f53841df4adf30.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "66c6350cce655aa",
+        "name" : "醉踏天下lwp",
+        "source" : "66c6350cce655aa.attach",
+        "type" : "text/plain",
+        "size" : 39
+      }, {
+        "uid" : "46bc3a90f1529261",
+        "name" : "图片",
+        "source" : "46bc3a90f1529261.png",
+        "type" : "image/png",
+        "size" : 526680
+      } ],
+      "parameters" : [ {
+        "name" : "args",
+        "value" : "{'username': '17745164862', 'password': '1996514lvp', 'toast': '醉踏天下lwp', 'screen_name': 'test_login_001'}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 8,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 8,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "scripts"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "USER-20171125WC"
+  }, {
+    "name" : "thread",
+    "value" : "9124-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "scripts.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "args",
+    "value" : "{'username': '17745164862', 'password': '1996514lvp', 'toast': '醉踏天下lwp', 'screen_name': 'test_login_001'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "d7727ba53b14220c",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False",
+      "time" : {
+        "start" : 1576654077748,
+        "stop" : 1576654120893,
+        "duration" : 43145
+      }
+    }, {
+      "uid" : "6de15d13c3fc021",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576653847342,
+        "stop" : 1576653894742,
+        "duration" : 47400
+      }
+    }, {
+      "uid" : "b5adc1fc6e2aca04",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: '../screen/test_login_001.png'",
+      "time" : {
+        "start" : 1576653717822,
+        "stop" : 1576653730856,
+        "duration" : 13034
+      }
+    }, {
+      "uid" : "49eda83f49116d3f",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: \"../screen/' + screen + '.png\"",
+      "time" : {
+        "start" : 1576653575574,
+        "stop" : 1576653615088,
+        "duration" : 39514
+      }
+    }, {
+      "uid" : "89ab2894b1bc0eb6",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: \"../screen/' + screen + '.png\"",
+      "time" : {
+        "start" : 1576653384257,
+        "stop" : 1576653404726,
+        "duration" : 20469
+      }
+    }, {
+      "uid" : "3a4dbe7441fd61cf",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: \"./screen/' + screen + '.png\"",
+      "time" : {
+        "start" : 1576653249653,
+        "stop" : 1576653264476,
+        "duration" : 14823
+      }
+    }, {
+      "uid" : "60909407c8c21668",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'TestLogin' object has no attribute 'readimage'",
+      "time" : {
+        "start" : 1576653138244,
+        "stop" : 1576653138249,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "721fafbabdc9265c",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: \"../screen/' + screen + '.png\"",
+      "time" : {
+        "start" : 1576652876601,
+        "stop" : 1576652876604,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "dae5c84377884cf",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: module 'allure' has no attribute 'attach_type'",
+      "time" : {
+        "start" : 1576652107859,
+        "stop" : 1576652157201,
+        "duration" : 49342
+      }
+    }, {
+      "uid" : "18e28afa12180820",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: '../screen/test_login_001.png'",
+      "time" : {
+        "start" : 1576651476647,
+        "stop" : 1576651520537,
+        "duration" : 43890
+      }
+    }, {
+      "uid" : "cdc3e2c345097dd2",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: module 'allure' has no attribute 'attach_type'",
+      "time" : {
+        "start" : 1576650419341,
+        "stop" : 1576650466294,
+        "duration" : 46953
+      }
+    }, {
+      "uid" : "2c2353fd9aa6c71c",
+      "status" : "broken",
+      "statusDetails" : "OSError: [Errno 22] Invalid argument: './screen/\"+screen+\".png'",
+      "time" : {
+        "start" : 1576649839159,
+        "stop" : 1576649898187,
+        "duration" : 59028
+      }
+    }, {
+      "uid" : "69e719d78d226d52",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576649184026,
+        "stop" : 1576649232561,
+        "duration" : 48535
+      }
+    }, {
+      "uid" : "2864baa3f1c22433",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576648728430,
+        "stop" : 1576648768035,
+        "duration" : 39605
+      }
+    }, {
+      "uid" : "b5109bcfa3f9e238",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576648555239,
+        "stop" : 1576648606981,
+        "duration" : 51742
+      }
+    }, {
+      "uid" : "b2eaff8447fa84be",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1576648330942,
+        "stop" : 1576648375610,
+        "duration" : 44668
+      }
+    }, {
+      "uid" : "e3e39c2c7d9bd305",
+      "status" : "broken",
+      "statusDetails" : "TypeError: is_toast_exist() missing 2 required positional arguments: 'timeout' and 'poll'",
+      "time" : {
+        "start" : 1576648188815,
+        "stop" : 1576648203408,
+        "duration" : 14593
+      }
+    }, {
+      "uid" : "5d817988bfe9c5d3",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1576647965057,
+        "stop" : 1576648012643,
+        "duration" : 47586
+      }
+    }, {
+      "uid" : "57055e46cff53d63",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1576647701059,
+        "stop" : 1576647735418,
+        "duration" : 34359
+      }
+    }, {
+      "uid" : "9895b4299c182582",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1576647496375,
+        "stop" : 1576647539690,
+        "duration" : 43315
+      }
+    }, {
+      "uid" : "14be5927552dde9",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1576647398793,
+        "stop" : 1576647433115,
+        "duration" : 34322
+      }
+    }, {
+      "uid" : "37f4611f83f75cd7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576647122069,
+        "stop" : 1576647165109,
+        "duration" : 43040
+      }
+    }, {
+      "uid" : "8771f5c1cf374a1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576646920245,
+        "stop" : 1576646945526,
+        "duration" : 25281
+      }
+    }, {
+      "uid" : "7f4943eb568ab4f6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576646678915,
+        "stop" : 1576646718793,
+        "duration" : 39878
+      }
+    }, {
+      "uid" : "7d61ac671d54934",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576646537940,
+        "stop" : 1576646571807,
+        "duration" : 33867
+      }
+    }, {
+      "uid" : "599255f2d53b12eb",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1576645683799,
+        "stop" : 1576645726660,
+        "duration" : 42861
+      }
+    }, {
+      "uid" : "ed362e5d998cf5f3",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1576643059490,
+        "stop" : 1576643106893,
+        "duration" : 47403
+      }
+    }, {
+      "uid" : "269e72fd79d87fd4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576642713361,
+        "stop" : 1576642777880,
+        "duration" : 64519
+      }
+    }, {
+      "uid" : "7828713a9d0c53b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576641232486,
+        "stop" : 1576641259772,
+        "duration" : 27286
+      }
+    }, {
+      "uid" : "10d45d82bdc6a936",
+      "status" : "passed",
+      "time" : {
+        "start" : 1576640933736,
+        "stop" : 1576640984602,
+        "duration" : 50866
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6ea85004212e67cc.json",
+  "parameterValues" : [ "{'username': '17745164862', 'password': '1996514lvp', 'toast': '醉踏天下lwp', 'screen_name': 'test_login_001'}" ]
+}

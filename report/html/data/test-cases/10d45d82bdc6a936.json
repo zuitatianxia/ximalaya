@@ -1,0 +1,126 @@
+{
+  "uid" : "10d45d82bdc6a936",
+  "name" : "test_login2[args0]",
+  "fullName" : "scripts.test_login.TestLogin#test_login2",
+  "historyId" : "b070444a4fe3f8109987bda83efe4674",
+  "time" : {
+    "start" : 1576640933736,
+    "stop" : 1576640984602,
+    "duration" : 50866
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "测试登录脚本",
+      "time" : {
+        "start" : 1576640933736,
+        "stop" : 1576640984602,
+        "duration" : 50866
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "cf3175a8035e319c",
+        "name" : "立即登录按钮",
+        "source" : "cf3175a8035e319c.attach",
+        "type" : "text/plain",
+        "size" : 18
+      }, {
+        "uid" : "ac1e6082ba2cd0ce",
+        "name" : "密码登录按钮",
+        "source" : "ac1e6082ba2cd0ce.attach",
+        "type" : "text/plain",
+        "size" : 18
+      }, {
+        "uid" : "9899584e8c1b503a",
+        "name" : "17745164862",
+        "source" : "9899584e8c1b503a.attach",
+        "type" : "text/plain",
+        "size" : 18
+      }, {
+        "uid" : "197916027f8ac425",
+        "name" : "点击密码框使其选中状态",
+        "source" : "197916027f8ac425.attach",
+        "type" : "text/plain",
+        "size" : 15
+      }, {
+        "uid" : "9db394e622eed60f",
+        "name" : "1996514lvp",
+        "source" : "9db394e622eed60f.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "be3018dc39c2bb75",
+        "name" : "登录按钮",
+        "source" : "be3018dc39c2bb75.attach",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "110af7170fc8d326",
+        "name" : "成功",
+        "source" : "110af7170fc8d326.attach",
+        "type" : "text/plain",
+        "size" : 39
+      } ],
+      "parameters" : [ {
+        "name" : "args",
+        "value" : "{'username': '17745164862', 'password': '1996514lvp', 'toast': '成功'}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 7,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 7,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "scripts"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "USER-20171125WC"
+  }, {
+    "name" : "thread",
+    "value" : "7932-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "scripts.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "args",
+    "value" : "{'username': '17745164862', 'password': '1996514lvp', 'toast': '成功'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "10d45d82bdc6a936.json",
+  "parameterValues" : [ "{'username': '17745164862', 'password': '1996514lvp', 'toast': '成功'}" ]
+}
